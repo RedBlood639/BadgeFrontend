@@ -47,7 +47,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: '.next'
-          target: '/home/ubuntu/poly186-alpha-frontend/'
+          target: '/home/ubuntu/dominus-alpha-frontend/'
 
       - name: Run SSH command on target
         uses: appleboy/ssh-action@master
@@ -58,7 +58,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             PATH=$PATH:/home/ubuntu/.nvm/versions/node/v14.15.0/bin
-            pm2 restart poly186-frontend
+            pm2 restart dominus-frontend
 
       - name: Discord Notify
         uses: rjstone/discord-webhook-notify@v1
