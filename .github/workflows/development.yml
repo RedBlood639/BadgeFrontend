@@ -47,7 +47,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: '.next'
-          target: '/home/ubuntu/dominus-frontend/'
+          target: '/home/ubuntu/Dominus-frontend/'
 
       - name: Run SSH command on target
         uses: appleboy/ssh-action@master
