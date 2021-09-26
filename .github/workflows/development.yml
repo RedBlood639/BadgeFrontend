@@ -58,7 +58,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             PATH=$PATH:/home/ubuntu/.nvm/versions/node/v14.15.0/bin
-            pm2 restart dominus-frontend
+            pm2 restart dominus-frontend-pm2
 
       - name: Discord Notify
         uses: rjstone/discord-webhook-notify@v1
