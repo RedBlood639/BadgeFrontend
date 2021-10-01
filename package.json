@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@redq/reuse-modal": "^1.2.4",
+    "@styled-system/theme-get": "^5.1.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",

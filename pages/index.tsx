@@ -1,12 +1,19 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import React from 'react'
+import { siteMetadata } from '../utils/site-metadata/siteMetadata'
+import { SEO } from '../components/Seo/Seo'
+import Domminus from '../public/assests/images/domminus.png'
 
-const Home: NextPage = () => {
+const IndexPage: React.FC<{}> = () => {
   return (
-    <div className={styles.container}>
-      Dominus-frontend
-    </div>
+    <>
+      <SEO
+        title={siteMetadata.home.title}
+        description={siteMetadata.home.description}
+        image={Domminus}
+      ></SEO>
+      <div>This is HomePage</div>
+    </>
   )
 }
+
+export default IndexPage
