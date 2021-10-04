@@ -8,9 +8,7 @@ const Home: NextPage = () => {
         title={siteMetadata.home.title}
         description={siteMetadata.home.description}
       />
-      <div>
-        <p>Index Page</p>
-      </div>
+      {'Welcome to WHATABYTE!'}
     </>
   )
 }

@@ -1,5 +1,10 @@
 import React from 'react'
 import { HeaderWrapper } from './header.style'
-const Header = () => <HeaderWrapper>Header</HeaderWrapper>
+type headerProps = {
+  appTitle: string
+}
+const Header: React.FC<headerProps> = ({ appTitle }) => (
+  <HeaderWrapper>{appTitle}</HeaderWrapper>
+)
 
 export default Header
