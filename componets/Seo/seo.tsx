@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
-export type SeoProps = {
+type SeoProps = {
   title: string
   description: string
   keywords?: string
@@ -10,8 +9,7 @@ export type SeoProps = {
   js?: string
   image?: string
 }
-
-export const SEO: React.FC<SeoProps> = ({
+const SEO: React.FC<SeoProps> = ({
   title,
   description,
   canonical,
@@ -52,3 +50,5 @@ export const SEO: React.FC<SeoProps> = ({
     {js && <script type="text/javascript" src={`${js}`}></script>}
   </Head>
 )
+
+export default SEO

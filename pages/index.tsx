@@ -1,19 +1,18 @@
-import React from 'react'
-import { siteMetadata } from '../utils/site-metadata/siteMetadata'
-import { SEO } from '../components/Seo/Seo'
-import Domminus from '../public/assests/images/domminus.png'
-
-const IndexPage: React.FC<{}> = () => {
+import type { NextPage } from 'next'
+import SEO from '../componets/Seo/seo'
+import siteMetadata from '../utils/site-metadata/siteMetadata'
+const Home: NextPage = () => {
   return (
     <>
       <SEO
         title={siteMetadata.home.title}
         description={siteMetadata.home.description}
-        image={Domminus}
-      ></SEO>
-      <div>This is HomePage</div>
+      />
+      <div>
+        <p>Index Page</p>
+      </div>
     </>
   )
 }
 
-export default IndexPage
+export default Home

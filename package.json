@@ -3,21 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3005",
+    "dev": "next dev -p 3003",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@redq/reuse-modal": "^1.2.4",
-    "@styled-system/theme-get": "^5.1.2",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
-    "@types/react": "17.0.25",
+    "@types/react": "17.0.26",
     "@types/styled-components": "^5.1.14",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
