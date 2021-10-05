@@ -10,7 +10,7 @@ export const DefaultTheme = {
 
     onprimary: '#000',
     onprimarylight: '#A1A1A1',
-    onsecondary: '#fff',
+    onsecondary: '#ffffff',
 
     highlight: '#FA4141',
   },
