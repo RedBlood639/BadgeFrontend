@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { ReactComponentElement, ReactElement, ReactNode } from 'react'
 import NavButton from '../../componets/NavButton/NavButton'
 import { FooterWrapper, FooterItem } from './footer.style'
 
 type ButtonProps = {
   label: string
   path: string
-  icon: React.Component
+  icon: any
 }
 
 type FooterProps = {
