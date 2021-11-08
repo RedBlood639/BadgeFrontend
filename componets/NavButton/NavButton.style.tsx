@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 type Props = {
-  active: boolean
-}
+  active: boolean;
+};
 export const Button = styled.div<Props>`
   display: flex;
   flex-direction: column;
@@ -9,14 +9,14 @@ export const Button = styled.div<Props>`
   align-items: center;
   height: 100%;
   cursor: pointer;
-  ${(Props) => (Props.active ? 'background:red;' : '')}
-`
+  ${(Props) => (Props.active ? "background:red;" : "")}
+`;
 
 export const Icon = styled.div`
   font-size: 20px;
-`
+`;
 
 export const Label = styled.span`
   font-size: 12px;
   text-transform: capitalize;
-`
+`;

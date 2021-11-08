@@ -1,14 +1,14 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
 type SeoProps = {
-  title: string
-  description: string
-  keywords?: string
-  canonical?: string
-  css?: string
-  js?: string
-  image?: string
-}
+  title: string;
+  description: string;
+  keywords?: string;
+  canonical?: string;
+  css?: string;
+  js?: string;
+  image?: string;
+};
 const SEO: React.FC<SeoProps> = ({
   title,
   description,
@@ -35,12 +35,12 @@ const SEO: React.FC<SeoProps> = ({
       content={description}
     />
     <meta property="og:site_name" content="SplitChek" />
-    <meta property="og:url" content={`${canonical || 'splitchek.com'}`} />
-    {image ? <meta property="og:image" content={`${image}`} /> : ''}
+    <meta property="og:url" content={`${canonical || "splitchek.com"}`} />
+    {image ? <meta property="og:image" content={`${image}`} /> : ""}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:site" content={`${canonical || 'splitchek.com'}`} />
+    <meta name="twitter:site" content={`${canonical || "splitchek.com"}`} />
     {image && <meta name="twitter:image" content={`${image}`} />}
     {canonical && <link rel="canonical" href={`${canonical}`} />}
     <link rel="publisher" href="www.splitchek.com" />
@@ -49,6 +49,6 @@ const SEO: React.FC<SeoProps> = ({
     {css && <link rel="stylesheet" href={`${css}`} />}
     {js && <script type="text/javascript" src={`${js}`}></script>}
   </Head>
-)
+);
 
-export default SEO
+export default SEO;

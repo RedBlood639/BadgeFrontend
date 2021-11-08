@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
   flex: 1;
@@ -7,7 +7,7 @@ export const LayoutWrapper = styled.div`
 
   height: 100%;
   width: 100%;
-`
+`;
 export const LayoutContent = styled.div`
   flex: 1;
   display: flex;
@@ -19,7 +19,7 @@ export const LayoutContent = styled.div`
   background: ${(props) => props.theme.color.secondary};
   color: ${(props) => props.theme.color.onsecondary};
   font-family: ${(props) => props.theme.font.corefont};
-`
+`;
 export const A = styled.a`
   color: inherit;
-`
+`;
